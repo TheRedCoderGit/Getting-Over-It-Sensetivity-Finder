@@ -30,6 +30,7 @@ namespace GettingOverItSensetivityFinder {
             Double2ulong d2ul = new Double2ulong();
             d2ul.ul = (ulong)gameSensetivityRegistry;
             double gamePrecent = d2ul.d;
+            Console.WriteLine("Double Value:         " + gamePrecent);
             double doublePrecent = (gamePrecent - min) / (max - min);
             double precent = (int)(doublePrecent * 10000) / 100d;
             Console.WriteLine("Game Sensetivity:     " + precent + "%");
