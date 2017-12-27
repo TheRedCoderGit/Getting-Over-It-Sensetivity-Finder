@@ -14,20 +14,19 @@ namespace GettingOverItSensetivityFinder {
             public ulong ul;
         }
 
-        static string hexValue(long l) {
-            byte[] bytes = BitConverter.GetBytes(l);
-            StringBuilder hex = new StringBuilder(bytes.Length * 2);
-            foreach (byte b in bytes)
-                hex.AppendFormat("{0:x2}", b);
-            return hex.ToString().ToUpper();
-        }
-
         static void Main(string[] args) {
             const double min = 0.1d;
             const double max = 2.4d;
 
             long gameSensetivityRegistry = (long)Registry.GetValue("HKEY_CURRENT_USER\\Software\\Bennett Foddy\\Getting Over It", "MouseSensitivity_h2921938665", null);
-            Console.WriteLine("Hex Value:            0x" + hexValue(gameSensetivityRegistry));
+
+            byte[] temp = BitConverter.GetBytes(gameSensetivityRegistry);
+            Array.Reverse(temp);
+            long reversed = BitConverter.ToInt64(temp, 0);
+            string hex = string.Format("{0:X}", reversed);
+            while (hex.Length < 16) hex = "0" + hex;
+
+            Console.WriteLine("Hex Value:            0x" + hex);
             Double2ulong d2ul = new Double2ulong();
             d2ul.ul = (ulong)gameSensetivityRegistry;
             double gamePrecent = d2ul.d;
