@@ -1,0 +1,2 @@
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\bin\Release\GettingOverItSensetivityFinder.exe
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\obj\x86\Release\GettingOverItSensetivityFinder.exe

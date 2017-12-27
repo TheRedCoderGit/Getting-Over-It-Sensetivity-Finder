@@ -1,0 +1,4 @@
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\bin\Debug\GettingOverItSensetivityFinder.exe
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\bin\Debug\GettingOverItSensetivityFinder.pdb
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\obj\x86\Debug\GettingOverItSensetivityFinder.exe
+C:\Users\Shai\Documents\Projects\GettingOverItSensetivityFinder\GettingOverItSensetivityFinder\obj\x86\Debug\GettingOverItSensetivityFinder.pdb
